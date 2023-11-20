@@ -339,19 +339,7 @@ For a competitive esport game, nothing is more important than winning. Even if y
 To begin with, I have eliminated all the irrelavant columns and gather the columns kills, deaths, and assits and formulate them into a new column, kda, which records the quanty of kills and assits per life. As a result, the dataframe is crop to keeping the following column:```["gameid",'result','game','participantid','side', 'position',
        'playername', 'playerid', 'teamname', 'teamid', 'champion', 'ban1',
        'ban2', 'ban3', 'ban4', 'ban5',"kda", "damageshare", "cspm"]```
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -626,20 +614,7 @@ To begin with, I have eliminated all the irrelavant columns and gather the colum
 <p>129348 rows × 19 columns</p>
 </div>
 
-
-
-Below are games in which Ezreal is selected as the ADC
-
-
-```python
-ezreal_gameids = game_performance_metrics[game_performance_metrics['champion'] == 'Ezreal']['gameid'].unique()
-ezrealdf =game_performance_metrics[game_performance_metrics['gameid'].isin(ezreal_gameids)]
-ezrealdf
-
-```
-
-
-
+As it is about the champion Ezreal, we have also created a subset dataframe that only contains data of the champion.
 
 <div>
 <style scoped>
@@ -928,7 +903,7 @@ ezrealdf
 <p>10980 rows × 19 columns</p>
 </div>
 
-
+####
 
 ## Assessment of Missingness
 
