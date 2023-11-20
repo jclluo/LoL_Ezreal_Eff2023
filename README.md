@@ -10,19 +10,7 @@ In the competitive scene, Ezreal has always been a controversial champion to pic
 
 Is he being overlooked or is he actually incompetent of winning at this level of competition? In this report, we will be taking analyzing Ezreal's performance in 2023's League of Legend's esport scene. We will be examing "2023 Lol esport match data" dataest from Oracles Elixir which has 129348 rows and 123 columns. 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -340,7 +328,6 @@ To begin with, I have eliminated all the irrelavant columns and gather the colum
        'playername', 'playerid', 'teamname', 'teamid', 'champion', 'ban1',
        'ban2', 'ban3', 'ban4', 'ban5',"kda", "damageshare", "cspm"]```
 
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -616,20 +603,6 @@ To begin with, I have eliminated all the irrelavant columns and gather the colum
 
 As it is about the champion Ezreal, we have also created a subset dataframe that only contains data of the champion.
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -902,6 +875,7 @@ As it is about the champion Ezreal, we have also created a subset dataframe that
 </table>
 <p>10980 rows × 19 columns</p>
 </div>
+
 
 ####
 
