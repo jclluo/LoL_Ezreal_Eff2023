@@ -538,8 +538,11 @@ As it is about the champion Ezreal, we have also created a subset dataframe that
 
 
 #### Univariate Analysis
-Now, let's analyze 
-[[kda](file:///Users/jclluo/Desktop/dsc80-2023-fa/projects/03-topic/kda_distribution.html)]
+Let's see the stats of kdaa, damage share, and cspm:
+[[kda](kda_distribution.html)]
+
+
+
 
 #### Bivariate Analysis
 
