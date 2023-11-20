@@ -11,7 +11,6 @@ In the competitive scene, Ezreal has always been a controversial champion to pic
 Is he being overlooked or is he actually incompetent of winning at this level of competition? In this report, we will be taking analyzing Ezreal's performance in 2023's League of Legend's esport scene. We will be examing "2023 Lol esport match data" dataest from Oracles Elixir which has 129348 rows and 123 columns. 
 
 
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -184,126 +183,6 @@ Is he being overlooked or is he actually incompetent of winning at this level of
       <td>...</td>
       <td>...</td>
     </tr>
-    <tr>
-      <th>129343</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>complete</td>
-      <td>NaN</td>
-      <td>NEXO</td>
-      <td>2024</td>
-      <td>Split 1</td>
-      <td>0</td>
-      <td>2023-11-13 20:32:25</td>
-      <td>1</td>
-      <td>13.21</td>
-      <td>...</td>
-      <td>152.0</td>
-      <td>677.0</td>
-      <td>736.0</td>
-      <td>-2.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>129344</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>complete</td>
-      <td>NaN</td>
-      <td>NEXO</td>
-      <td>2024</td>
-      <td>Split 1</td>
-      <td>0</td>
-      <td>2023-11-13 20:32:25</td>
-      <td>1</td>
-      <td>13.21</td>
-      <td>...</td>
-      <td>143.0</td>
-      <td>-956.0</td>
-      <td>-16.0</td>
-      <td>-11.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>129345</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>complete</td>
-      <td>NaN</td>
-      <td>NEXO</td>
-      <td>2024</td>
-      <td>Split 1</td>
-      <td>0</td>
-      <td>2023-11-13 20:32:25</td>
-      <td>1</td>
-      <td>13.21</td>
-      <td>...</td>
-      <td>11.0</td>
-      <td>107.0</td>
-      <td>497.0</td>
-      <td>17.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>129346</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>complete</td>
-      <td>NaN</td>
-      <td>NEXO</td>
-      <td>2024</td>
-      <td>Split 1</td>
-      <td>0</td>
-      <td>2023-11-13 20:32:25</td>
-      <td>1</td>
-      <td>13.21</td>
-      <td>...</td>
-      <td>560.0</td>
-      <td>-1386.0</td>
-      <td>-2270.0</td>
-      <td>-41.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>129347</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>complete</td>
-      <td>NaN</td>
-      <td>NEXO</td>
-      <td>2024</td>
-      <td>Split 1</td>
-      <td>0</td>
-      <td>2023-11-13 20:32:25</td>
-      <td>1</td>
-      <td>13.21</td>
-      <td>...</td>
-      <td>519.0</td>
-      <td>1386.0</td>
-      <td>2270.0</td>
-      <td>41.0</td>
-      <td>3.0</td>
-      <td>3.0</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>3.0</td>
-    </tr>
   </tbody>
 </table>
 <p>129348 rows × 123 columns</p>
@@ -327,6 +206,7 @@ For a competitive esport game, nothing is more important than winning. Even if y
 To begin with, I have eliminated all the irrelavant columns and gather the columns kills, deaths, and assits and formulate them into a new column, kda, which records the quanty of kills and assits per life. As a result, the dataframe is crop to keeping the following column:```["gameid",'result','game','participantid','side', 'position',
        'playername', 'playerid', 'teamname', 'teamid', 'champion', 'ban1',
        'ban2', 'ban3', 'ban4', 'ban5',"kda", "damageshare", "cspm"]```
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -485,116 +365,6 @@ To begin with, I have eliminated all the irrelavant columns and gather the colum
       <td>...</td>
       <td>...</td>
       <td>...</td>
-    </tr>
-    <tr>
-      <th>129343</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>1</td>
-      <td>1</td>
-      <td>8</td>
-      <td>Red</td>
-      <td>mid</td>
-      <td>Tirex</td>
-      <td>oe:player:ae97b9649e39ad901b680f74c3f56b3</td>
-      <td>Universae Instituto FP</td>
-      <td>oe:team:2d02ba0b874367692a25110f0e321f6</td>
-      <td>Ahri</td>
-      <td>Rumble</td>
-      <td>Ziggs</td>
-      <td>Jarvan IV</td>
-      <td>Orianna</td>
-      <td>Syndra</td>
-      <td>9.000000</td>
-      <td>0.304237</td>
-      <td>9.6440</td>
-    </tr>
-    <tr>
-      <th>129344</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>1</td>
-      <td>1</td>
-      <td>9</td>
-      <td>Red</td>
-      <td>bot</td>
-      <td>Alonshot</td>
-      <td>oe:player:1723bb9b9fe68aea988f0c7ec75fbe1</td>
-      <td>Universae Instituto FP</td>
-      <td>oe:team:2d02ba0b874367692a25110f0e321f6</td>
-      <td>Aphelios</td>
-      <td>Rumble</td>
-      <td>Ziggs</td>
-      <td>Jarvan IV</td>
-      <td>Orianna</td>
-      <td>Syndra</td>
-      <td>3.500000</td>
-      <td>0.187860</td>
-      <td>9.5183</td>
-    </tr>
-    <tr>
-      <th>129345</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>1</td>
-      <td>1</td>
-      <td>10</td>
-      <td>Red</td>
-      <td>sup</td>
-      <td>Boohis</td>
-      <td>oe:player:38408cb0943e6f27ccd6272bdc1f09b</td>
-      <td>Universae Instituto FP</td>
-      <td>oe:team:2d02ba0b874367692a25110f0e321f6</td>
-      <td>Rakan</td>
-      <td>Rumble</td>
-      <td>Ziggs</td>
-      <td>Jarvan IV</td>
-      <td>Orianna</td>
-      <td>Syndra</td>
-      <td>12.000000</td>
-      <td>0.068353</td>
-      <td>1.8220</td>
-    </tr>
-    <tr>
-      <th>129346</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>0</td>
-      <td>1</td>
-      <td>100</td>
-      <td>Blue</td>
-      <td>team</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Erfolg Esports</td>
-      <td>oe:team:4103ef051074f24e9566d1b7443c3fb</td>
-      <td>NaN</td>
-      <td>Maokai</td>
-      <td>Poppy</td>
-      <td>Taliyah</td>
-      <td>Milio</td>
-      <td>Cassiopeia</td>
-      <td>0.857143</td>
-      <td>NaN</td>
-      <td>33.6440</td>
-    </tr>
-    <tr>
-      <th>129347</th>
-      <td>ESPORTSTMNT02_3251457</td>
-      <td>1</td>
-      <td>1</td>
-      <td>200</td>
-      <td>Red</td>
-      <td>team</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Universae Instituto FP</td>
-      <td>oe:team:2d02ba0b874367692a25110f0e321f6</td>
-      <td>NaN</td>
-      <td>Rumble</td>
-      <td>Ziggs</td>
-      <td>Jarvan IV</td>
-      <td>Orianna</td>
-      <td>Syndra</td>
-      <td>10.250000</td>
-      <td>NaN</td>
-      <td>37.6335</td>
     </tr>
   </tbody>
 </table>
@@ -761,123 +531,21 @@ As it is about the champion Ezreal, we have also created a subset dataframe that
       <td>...</td>
       <td>...</td>
     </tr>
-    <tr>
-      <th>129331</th>
-      <td>ESPORTSTMNT02_3250546</td>
-      <td>1</td>
-      <td>1</td>
-      <td>8</td>
-      <td>Red</td>
-      <td>mid</td>
-      <td>Nestor</td>
-      <td>oe:player:0d5006f22fac8518abf748573730738</td>
-      <td>Kawaii Kiwis</td>
-      <td>oe:team:8eb9a212591f919a353abfac0c0a52a</td>
-      <td>Ahri</td>
-      <td>Jayce</td>
-      <td>Orianna</td>
-      <td>Rell</td>
-      <td>Nautilus</td>
-      <td>Leona</td>
-      <td>10.000000</td>
-      <td>0.371440</td>
-      <td>8.7555</td>
-    </tr>
-    <tr>
-      <th>129332</th>
-      <td>ESPORTSTMNT02_3250546</td>
-      <td>1</td>
-      <td>1</td>
-      <td>9</td>
-      <td>Red</td>
-      <td>bot</td>
-      <td>Kurilius</td>
-      <td>oe:player:ed6b2c95feaa4fd78f2ed6cd24dedf4</td>
-      <td>Kawaii Kiwis</td>
-      <td>oe:team:8eb9a212591f919a353abfac0c0a52a</td>
-      <td>Ezreal</td>
-      <td>Jayce</td>
-      <td>Orianna</td>
-      <td>Rell</td>
-      <td>Nautilus</td>
-      <td>Leona</td>
-      <td>2.000000</td>
-      <td>0.257506</td>
-      <td>9.1520</td>
-    </tr>
-    <tr>
-      <th>129333</th>
-      <td>ESPORTSTMNT02_3250546</td>
-      <td>1</td>
-      <td>1</td>
-      <td>10</td>
-      <td>Red</td>
-      <td>sup</td>
-      <td>Whyx</td>
-      <td>oe:player:df3f37d87473767caaa78b04dffc663</td>
-      <td>Kawaii Kiwis</td>
-      <td>oe:team:8eb9a212591f919a353abfac0c0a52a</td>
-      <td>Rakan</td>
-      <td>Jayce</td>
-      <td>Orianna</td>
-      <td>Rell</td>
-      <td>Nautilus</td>
-      <td>Leona</td>
-      <td>5.000000</td>
-      <td>0.052344</td>
-      <td>1.5529</td>
-    </tr>
-    <tr>
-      <th>129334</th>
-      <td>ESPORTSTMNT02_3250546</td>
-      <td>0</td>
-      <td>1</td>
-      <td>100</td>
-      <td>Blue</td>
-      <td>team</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Dango SB</td>
-      <td>oe:team:6da30cd905c797eaea30aeb18bc091a</td>
-      <td>NaN</td>
-      <td>Gnar</td>
-      <td>Caitlyn</td>
-      <td>Akali</td>
-      <td>Syndra</td>
-      <td>Neeko</td>
-      <td>0.785714</td>
-      <td>NaN</td>
-      <td>30.5286</td>
-    </tr>
-    <tr>
-      <th>129335</th>
-      <td>ESPORTSTMNT02_3250546</td>
-      <td>1</td>
-      <td>1</td>
-      <td>200</td>
-      <td>Red</td>
-      <td>team</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Kawaii Kiwis</td>
-      <td>oe:team:8eb9a212591f919a353abfac0c0a52a</td>
-      <td>NaN</td>
-      <td>Jayce</td>
-      <td>Orianna</td>
-      <td>Rell</td>
-      <td>Nautilus</td>
-      <td>Leona</td>
-      <td>8.750000</td>
-      <td>NaN</td>
-      <td>32.9405</td>
-    </tr>
   </tbody>
 </table>
 <p>10980 rows × 19 columns</p>
 </div>
 
 
-####
+#### Univariate Analysis
+Now, let's analyze 
+[[kda](file:///Users/jclluo/Desktop/dsc80-2023-fa/projects/03-topic/kda_distribution.html)]
+
+#### Bivariate Analysis
+
+
+#### Interesting Aggregates
+
 
 ## Assessment of Missingness
 
