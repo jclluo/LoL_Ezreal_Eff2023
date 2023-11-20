@@ -1,6 +1,8 @@
 # LoL_Ezreal_Eff2023
 An analysis of champion Ezreal's effectiveness in the realm of 2023 League of Legends Esport. (Project for DSC80 at University of Califrnia San Diego))
 
+##Introduction
+
 ```python
 #load
 league = pd.read_csv('2023_LoL_esports_match_data_from_OraclesElixir.csv')
@@ -8,9 +10,6 @@ league
 
 ```
 
-    /var/folders/g0/6rfqkkms2jl55vm04r5k709r0000gn/T/ipykernel_726/2573673647.py:2: DtypeWarning:
-    
-    Columns (2) have mixed types. Specify dtype option on import or set low_memory=False.
     
 
 
@@ -380,7 +379,7 @@ league["champion"].unique()
 
 
 
-### Cleaning and EDA
+## Cleaning and EDA
 #### Data Cleaning
 First, only keep the relative columns for our analysis and combine neccessary columns for simplicity. We can cross out unneccessary stats, combine certain columns to one. And match the data type in each column. For instance, I have kept the basic information regarding the game, result, the players and the champions selected. I have also added a column "kda" which is the combination of $\frac{\text{kill} + \text{assist}}{\text{death}}$. I addition, I chose two other most genrealizable satistics, damageshare and csp as performance metrics for the champions
 
@@ -1403,7 +1402,7 @@ game_performance_metrics
 It seems like the win rate is about 5 % lower than the expected value. But for its significance, we will wait till the last section in this report to find out.
 
 
-### Assessment of Missingness
+## Assessment of Missingness
 
 Let's look at all the columns with missing values.
 
